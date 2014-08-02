@@ -1,0 +1,463 @@
+/* apply a natural box layout model to all elements */
+*, *:before, *:after {
+  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+ }
+
+ body {
+ 	background:url(../img/bg.jpg) no-repeat center center fixed;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;
+	color: white;
+	font-family: 'Roboto Condensed', sans-serif; 
+ }
+
+.container {
+	width: 100%;
+	height: auto;
+	display: block;
+	margin: 0 auto;
+	padding: 0 2rem;
+} 
+
+.left {
+	width: 30%;
+	display: block;
+	height: auto;
+	float: left;
+}
+
+.signup {
+	width: 100%!important;
+	float: none;
+}
+
+.signup form {
+	width: 40%;
+	display: block;
+	margin: 0 auto;
+}
+
+.message {
+	text-align: center;
+	display: block;
+	margin-bottom: 2rem;
+}
+
+.signup-title {
+	text-align: center;
+	font-size: 4rem!important;
+	margin-bottom: 1rem;
+	margin-top: 0rem!important;
+}
+
+.signup form input[type=submit], .signup form input[type=text], .signup form input[type=password]{
+	width: 100%;
+	display: block;
+	height: 50px;
+	background: transparent;
+	appaerence:none;
+	-webkit-appaerence:none;
+	-moz-appaerence:none;
+	border: 3px solid white;
+	border-radius: 6px;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	margin-bottom: 6px;
+	padding: 0px 1.6rem;
+}
+
+.signup form input:focus {
+	outline: none;
+	border: 3px solid white;
+	color: white;
+
+}
+
+.signup form input[type=submit] {
+	background: #00a651;
+	border: 3px solid #00a651;
+	font-weight: bold;
+	text-transform: uppercase;
+	clear: both;
+}
+
+.clearfix::before, .clearfix::after{
+    content: " ";
+    display: table;
+}
+
+.clearfix::after{
+    clear: both;
+}
+
+.signup form input[type=checkbox] {
+	display: block;
+	float: left;
+	margin-left: 10px;
+	margin-right: 12px;
+	position: relative;
+	top: 1rem;
+}
+
+#confirm-label {
+	text-align: left;
+	display: block;
+	font-size: 0.8rem;
+	position: relative;
+	top: 1rem;
+	padding-left: 2.4rem;
+	margin-bottom: 2rem;
+}
+
+#confirm-label a {
+	color: white;
+}
+
+.middle {
+	width: 35%;
+	display: block;
+	height: auto;
+	float: left;
+}
+
+.right {
+	width: 35%;
+	display: block;
+	height: auto;
+	float: left;
+}
+
+#logo-title {
+	background: url(../img/logo.png) no-repeat top left;
+	background-size: 53px 54px;
+	height: 54px;
+}
+
+#logo-title > a {
+	color: white;
+	text-decoration: none;
+	margin: 0;
+	padding: 0;
+	font-weight: 200;
+	letter-spacing: -2px;
+	font-size: 2rem;
+	padding-left: 64px;
+}
+
+.description {
+	font-weight: 200;
+	font-size: 1.8rem;
+	letter-spacing: -1px;
+	margin-top: 4.1rem;
+}
+
+.start-video {
+	color: white;
+	text-decoration: none;
+	padding: 10px 20px;
+	border: 2px solid white;
+	border-radius: 6px;
+	-webkit-border-radius:6px;
+	-moz-border-radius:6px;
+	font-weight: bold;
+}
+
+.start-video:hover {
+	background: white;
+	color: black;
+}
+
+.download {
+	position: fixed;
+	bottom: 20px;
+}
+
+.download ul {
+	margin: 0;
+	padding: 0;
+}
+
+.download ul li {
+	list-style-type: none;
+}
+
+.apple-store {
+	background: url(../img/apple-store.png) no-repeat top left;
+	background-size: 147px 50px;
+	height: 50px;
+	width: 147px;
+	display: block;
+	margin-bottom: 10px;
+	opacity: 0.4;
+}
+
+.play-store {
+	background: url(../img/play-store.png) no-repeat top left;
+	background-size: 147px 50px;
+	height: 50px;
+	width: 147px;
+	display: block;
+	margin-bottom: 10px;
+	opacity: 0.4;
+}
+
+.iphone {
+	background: url(../img/iphone.png) no-repeat top left;
+	background-size: 408px 781px;
+	height: 781px;
+	width: 408px;
+	display: block;
+	margin: 0;
+	padding: 0;
+	margin-top: 3rem;
+}
+
+.social {
+	float: right;
+	width: 164px;
+	display: block;
+	height: 39px;
+	margin-top: 20px;
+}
+
+.social > p {
+	display: inline-block;
+	position: relative;
+	top: -10px;
+	height: 39px;
+	margin: 0;
+	padding: 0;
+	margin-right: 10px;
+}
+.twitter {
+	background: url(../img/twitter.png) no-repeat top left;
+	background-size: 39px 39px;
+	height: 39px;
+	width: 39px;
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+	margin-right: 10px;
+}
+
+
+.facebook {
+	background: url(../img/facebook.png) no-repeat top left;
+	background-size: 36px 36px;
+	height: 36px;
+	width: 36px;
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+}
+
+
+.note-fdtd {
+	clear: both;
+	margin: 0;
+	padding: 0;
+	margin-top: 6rem;
+	display: block;
+	position: relative;
+	width: 280px;
+	float: right;
+	padding-right: 50px;
+}
+
+.note-fdtd span {
+	position: absolute;
+	right: 0px;
+	font-size: 3rem;
+	font-weight: bold;
+	margin-top: -10px;
+}
+
+.note-fdtd li {
+	list-style-type: none;
+	text-align: right;
+	font-size: 1rem;
+	margin-bottom: 20px;
+	padding-bottom: 20px;
+}
+
+.note-fdtd li:first-child {
+	border-bottom: 1px solid white;
+}
+
+.note-fdtd li:nth-child(2) {
+	border-bottom: 1px solid white;
+}
+
+.note-fdtd li:nth-child(3) {
+	border-bottom: 1px solid white;
+}
+
+.links-fdtd {
+	clear: both;
+	margin: 0;
+	padding: 0;
+	margin-left: 136px;
+	position: fixed;
+	bottom: 35px;
+	right: auto;
+}
+
+.links-fdtd li {
+	display: inline-block;
+	list-style-type: none;
+	margin-right: 10px;
+}
+
+.links-fdtd li a {
+	color: white;
+	text-decoration: none;
+}
+
+.links-fdtd li a:hover {
+	text-decoration: underline;
+}
+
+#slides {
+    display:none;
+    width: 295px;
+    height: 523px;
+    position: relative;
+	top: 130px;
+	left: 55px;
+}
+
+.slidesjs-container {
+	width: 295px!important;
+    height: 523px!important;
+}
+
+
+.signup.links-fdtd {
+	position: fixed;	
+	right: 20px!important;
+	bottom: 20px!important;
+	text-align: right;
+}
+
+@media screen and (max-width: 1024px){
+	.middle {
+		display: none;
+	}
+	.right {
+		display: none;
+	}
+	.container {
+		width: 100%;
+		height: auto;
+		display: block;
+		margin: 0 auto;
+	} 
+	.left {
+		width: 100%;
+		display: block;
+		height: auto;
+		float: none;
+		text-align: center;
+	}
+	#logo-title {
+		background: url(../img/logo.png) no-repeat top left;
+		background-size: 53px 54px;
+		height: 54px;
+		width: 220px;
+		margin: 0 auto;
+		padding-left: 50px;
+		margin-top: 2rem;
+	}
+
+	#logo-title > a {
+		color: white;
+		text-decoration: none;
+		margin: 0;
+		padding: 0;
+		font-weight: 200;
+		letter-spacing: -2px;
+		font-size: 1.6rem;
+		padding-left: 0;
+	}
+	.description {
+		font-weight: 200;
+		font-size: 1.8rem;
+		letter-spacing: -1px;
+		margin-top: 2.1rem;
+		padding: 0 0.8rem;
+		margin-bottom: 2.8rem;
+	}
+	.download {
+		position: static;
+		display: block;
+		margin: 0 auto;
+		margin-top: 3rem;
+		border-top: 1px solid rgba(255,255,255,0.6);
+		width: 80%;
+
+	}
+
+	.download ul {
+		margin: 0;
+		padding: 0;
+		text-align: center;
+		margin-bottom: 2rem;
+	}
+
+	.download ul li {
+		list-style-type: none;
+		text-align: center;
+	}
+	.download ul li a{
+		margin: 0 auto;
+		margin-bottom: 0.6rem;
+	}
+	.signup form {
+		width: 80%;
+		display: block;
+		margin: 0 auto;
+	}
+	#confirm-label {
+		text-align: left;
+		display: block;
+		font-size: 0.8rem;
+		position: relative;
+		top: 1rem;
+		margin-bottom: 2rem;
+	}
+	.signup.links-fdtd {
+		position: static;	
+		text-align: center;
+		display: block;
+		margin-left: 0;
+		margin-bottom: 3rem;
+	}
+}
+
+@media screen and (max-width: 1400px){ 
+	.links-fdtd {
+		clear: both;
+		margin: 0;
+		padding: 0;
+		margin-left: 0!important;
+		position: fixed;
+		bottom: 35px;
+		right:20px;
+	} 
+}
+
+@media screen and (min-width: 1400px){ 
+	.container {
+		width: 1280px;
+		height: auto;
+		display: block;
+		margin: 0 auto;
+	} 
+}
+
+
+
+
+
+
+
+
+

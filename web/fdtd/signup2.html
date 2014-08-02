@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+	<title>FDTD | Sign Up</title>
+	<meta name="viewport" content="width=device-width">
+	
+	<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:700,300' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/style.css">
+
+	<script src="js/lib/jquery-1.9.1.min.js"></script>
+	<script>
+		/**
+		 * Exemple de validation fake du formulaire en jQuery
+		**/
+		$(function() {
+			$('form').first().on('submit', function(evt) {
+				evt.preventDefault();
+
+				$('.message').removeAttr('data-hide').attr('data-show','');
+
+				var error = false;
+
+				if (error) {
+					$('.message').removeClass('message-success').addClass('message-error');
+				} else {
+					$('.message').removeClass('message-error').addClass('message-success');
+					$('form').removeAttr('data-show').attr('data-hide','');
+				}
+			});
+		});
+	</script>
+</head>
+
+<body role="main">
+
+	<!-- Menu haut -->
+	<header>
+		<nav>
+			<ul>
+				<li><a href="mailto:contact@fdtd.co">@Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+	<!-- /Fin menu haut -->
+	
+	<main>
+		<h1>Sign<strong>Up</strong></h1>
+	
+		<blockquote>
+			Welcome super earlybird!<br>
+			Want to reserve your access?<br>
+			Register <span class="strike">today</span> tonight!
+		</blockquote>
+		
+		<!--
+			Par défaut la "div.message" est cachée grâce à "data-hide"
+			La changer simplement par "data-show" via JS dès que c'est traité côté serveur.
+			Penser également à cacher le formulaire en lui appliquant "data-hide" pour le cacher via une super animation de la mort qui tue...
+
+			Une classe ".message-error" existe également s'il y a un problème (et auquel cas, ne pas mettre "data-hide" sur le <form> pour que l'user puisse corriger sa faute)
+
+			Regarde le code jQuery d'exemple plus haut pour simuler une validation fake ;)
+		-->
+
+		<div class="message message-success" data-hide>{{message}}</div>
+
+		<form action="signup.html" method="post">
+			<input type="text" name="nickname" autofocus required spellcheck="0" autocomplete="off" placeholder="your nickname">
+			<input type="password" name="password" required placeholder="********">
+			<input type="password" name="password2" required placeholder="********">
+			<input type="submit" value="Sign Up">
+		</form>
+	</main>
+
+</body>
+</html>

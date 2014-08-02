@@ -1,0 +1,15 @@
+<h1 id="logo-title">From<strong>Dusk</strong>Till<strong>Dawn</strong></h1>
+
+<blockquote>
+    What happens on FDTD<br>
+    stays on FDTD
+</blockquote>
+
+<p ng-model="activateMessage"></p>
+
+<form name="activateForm" class="name_send" method="post" ng-submit="activate(newUser)">
+    <input type="text" ng-model="newUser.pseudo" value="" placeholder="Username" required/>
+    <input type="email" ng-model="newUser.email" value="" placeholder="Email" required/>
+    <input type="password" ng-model="newUser.password" value="" placeholder="Password" required/>
+    <button type="submit" class="submit" ng-disabled="activateForm.$invalid">Sign up</button>
+</form>
